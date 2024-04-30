@@ -136,6 +136,7 @@ int main()  //Responsável é o ponto de entrada principal para a execução do prog
 	printf("\t1 - Registrar nomes\n");
 	printf("\t2 - Consultar nomes\n");
 	printf("\t3 - Deletar nomes\n");  
+	printf("\t4 - Sair do sistema\n\n");
 	printf("Opção: ");  //Fim do menu
 	
     scanf("%d", &opcao);  //Armazenando a escolha do usuario
@@ -155,6 +156,10 @@ int main()  //Responsável é o ponto de entrada principal para a execução do prog
 		case 3:  //Responsável por especificar as ações
 		deletar();  //Chamada de funções
 		break; //Responsável por sair de lopps
+		
+		case 4:
+		printf("Obrigado por acessar!\n\n");
+		return 0;
 		
 		
 		default:  //especificar uma ação a ser executada caso nenhum dos case correspondentes à expressão condicional exista
